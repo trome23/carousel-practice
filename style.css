@@ -1,3 +1,7 @@
+body {
+    background:goldenrod;
+}
+
 .carousel {
     max-width: 600px;
     position: relative;
@@ -9,6 +13,7 @@
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 .carousel .carousel-item img {
@@ -49,4 +54,13 @@
 
 .carousel-item-hidden {
     display: none;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
